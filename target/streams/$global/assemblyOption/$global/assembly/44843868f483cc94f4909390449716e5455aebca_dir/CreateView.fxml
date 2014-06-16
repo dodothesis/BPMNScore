@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.thesis.controller.Create">
+    <children>
+        <VBox layoutX="86.0" layoutY="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <GridPane hgap="10.0" vgap="10.0" VBox.vgrow="NEVER">
+                    <columnConstraints>
+                        <ColumnConstraints fillWidth="false" halignment="LEFT" hgrow="NEVER" maxWidth="-Infinity" minWidth="-Infinity" />
+                        <ColumnConstraints fillWidth="false" halignment="LEFT" hgrow="NEVER" maxWidth="-Infinity" minWidth="-Infinity" />
+                        <ColumnConstraints fillWidth="false" halignment="LEFT" hgrow="NEVER" maxWidth="-Infinity" minWidth="-Infinity" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints fillHeight="false" maxHeight="-Infinity" minHeight="25.0" valignment="CENTER" vgrow="NEVER" />
+                        <RowConstraints fillHeight="false" maxHeight="-Infinity" minHeight="25.0" valignment="CENTER" vgrow="NEVER" />
+                        <RowConstraints fillHeight="false" maxHeight="-Infinity" minHeight="25.0" valignment="CENTER" vgrow="NEVER" />
+                        <RowConstraints fillHeight="false" maxHeight="-Infinity" minHeight="25.0" valignment="CENTER" vgrow="NEVER" />
+                        <RowConstraints fillHeight="false" maxHeight="-Infinity" minHeight="25.0" valignment="CENTER" vgrow="NEVER" />
+                    </rowConstraints>
+                    <children>
+                        <Label text="Projekt Name" GridPane.rowIndex="1" />
+                        <Label text="Projekt Verzeichnis" GridPane.rowIndex="2" />
+                        <Label text="Projekt Pfad" GridPane.rowIndex="3" />
+                        <TextField fx:id="name" prefWidth="270.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1" />
+                        <TextField fx:id="directory" prefWidth="270.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" />
+                        <TextField fx:id="path" disable="true" focusTraversable="false" prefWidth="270.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" />
+                        <Button mnemonicParsing="false" onAction="#actionBrowseDir" text="Durchsuchen" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                        <Label text="Projekteigenschaften" GridPane.columnSpan="2147483647" GridPane.halignment="LEFT" GridPane.hgrow="ALWAYS">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="warning" text="Der Projekt Name ist kein gültiges Verzeichnis" textFill="RED" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                    </children>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                    </padding>
+                </GridPane>
+                <HBox alignment="CENTER_RIGHT" fillHeight="false" spacing="10.0" style="-fx-background-color: #dddddd;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                    <children>
+                        <Button fx:id="saveButton" defaultButton="true" disable="true" mnemonicParsing="false" onAction="#actionSave" text="Speichern" />
+                        <Button mnemonicParsing="false" onAction="#actionReset" text="Zurücksetzen" />
+                        <Button cancelButton="true" mnemonicParsing="false" onAction="#actionCancel" text="Abbrechen" />
+                    </children>
+                    <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                    </padding>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>

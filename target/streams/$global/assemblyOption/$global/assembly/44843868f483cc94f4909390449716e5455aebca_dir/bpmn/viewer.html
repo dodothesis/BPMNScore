@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+        .djs-outline{fill:none;visibility:hidden}.djs-group.hover .djs-outline,.djs-group.selected .djs-outline{visibility:visible;stroke-dasharray:2,4}.djs-group.selected .djs-outline{stroke:#00f;stroke-width:1px}.djs-group.hover .djs-outline{stroke:red;stroke-width:1px}.djs-group.drop-ok .djs-visual{fill:green}.djs-group.drop-not-ok .djs-visual{fill:red}.djs-dragger{fill:#fff;opacity:.3;stroke:#333;stroke-dasharray:2,1}.djs-shape.djs-dragging{visibility:hidden}.djs-hit{stroke-opacity:0;stroke-width:10px;fill:none}.djs-connection .djs-visual{stroke-width:2px;fill:none}.djs-connection .djs-bendpoint{visibility:hidden}.djs-connection:hover .djs-bendpoint{visibility:visible}.djs-connection .djs-bendpoint:hover{stroke:#CCC;stroke-width:1px;fill:#ff0}
+    </style>
+</head>
+<body>
+<div id="js-canvas" class="canvas"></div>
+<script src="../assets/parser.js"></script>
+<script src="../assets/viewer.js"></script>
+<script type="text/javascript">
+            var BpmnJS = require('bpmn-js/Viewer');
+            var xml;
+            var viewer = new BpmnJS({ container: '#js-canvas' })
+            viewer.importXML(xml, function(err) {
+                console.log(err)
+            });
+        </script>
+</body>
+</html>

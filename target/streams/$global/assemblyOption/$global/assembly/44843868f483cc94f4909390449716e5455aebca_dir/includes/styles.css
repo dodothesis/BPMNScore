@@ -1,0 +1,82 @@
+.split-pane>*.split-pane-divider {
+    -fx-padding: 0px 1px 0px 0px;
+    -fx-background-color: #aaaaaa;
+}
+
+.menu-bar {
+    -fx-padding: 0px;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-style: solid;
+    -fx-border-color: #aaaaaa;
+}
+
+.menu {
+    -fx-padding: 5px 7px;
+}
+
+.context-menu {
+    /*-fx-background-color: #e8e8e8;*/
+    -fx-padding: 0px;
+    /*-fx-effect: null;*/
+    -fx-border-width: 1px;
+    -fx-border-style: solid;
+    -fx-border-color: #aaaaaa;
+}
+
+.menu-item {
+    -fx-padding: 5px 10px;
+}
+
+.tree-view {
+    -fx-border-style: none;
+    -fx-background-color: transparent;
+    -fx-background-insets: 0px;
+    -fx-padding: 0px;
+}
+
+.tab-pane:top>*.tab-header-area { /* FX theme stylesheet */
+    -fx-padding: 0px;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-style: solid;
+    -fx-border-color: #aaaaaa;
+}
+
+.tab-pane>*.tab-header-area>*.tab-header-background { /* FX theme stylesheet */
+    -fx-background-color: #b8b8b8;
+}
+
+.tab-pane>*.tab-header-area>*.headers-region>*.tab { /* FX theme stylesheet */
+    -fx-background-color: #c8c8c8;
+    -fx-background-radius: 0px;
+    -fx-padding: 0.083333em 0.5em 0.0769em 0.5em;
+    -fx-border-width: 0px 1px 0px 0px;
+    -fx-border-style: solid;
+    -fx-border-color: #aaaaaa;
+    -fx-focus-color: transparent;
+    -fx-inner-border: none;
+}
+
+.tab-pane>*.tab-header-area>*.headers-region>*.tab:selected { /* FX theme stylesheet */
+    -fx-background-color: #e8e8e8;
+    -fx-background-insets: 0px;
+    -fx-focus-color: transparent;
+}
+
+.tab-pane>*.tab-header-area>*.headers-region>*.tab:focused { /* FX theme stylesheet */
+    -fx-background-color: transparent;
+    -fx-background-insets: 0px;
+    -fx-border-style: none;
+    -fx-focus-color: transparent;
+}
+
+.split-pane { /* FX theme stylesheet */
+    -fx-background-color: transparent;
+    -fx-background-insets: 0px;
+    -fx-padding: 0px;
+}
+
+#statusBar {
+    -fx-border-width: 1px 0px 0px 0px;
+    -fx-border-style: solid;
+    -fx-border-color: #aaaaaa;
+}

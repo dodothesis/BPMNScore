@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" style="-fx-border-style: none;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.thesis.controller.Model">
+<children><ToolBar focusTraversable="false" nodeOrientation="RIGHT_TO_LEFT">
+  <items><Button focusTraversable="false" mnemonicParsing="false" onAction="#actionPreviewModel" text="Vorschau" /><Button focusTraversable="false" mnemonicParsing="false" text="Löschen" />
+    <Button defaultButton="true" focusTraversable="false" mnemonicParsing="false" text="Speichern" />
+  </items>
+</ToolBar>
+<SplitPane dividerPositions="0.5" focusTraversable="false" orientation="VERTICAL" style="-fx-border-style: none;" VBox.vgrow="ALWAYS">
+<items><WebView fx:id="webView" focusTraversable="false" minHeight="-1.0" minWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" /><ListView fx:id="listView" focusTraversable="false" />
+</items>
+</SplitPane>
+</children></VBox>

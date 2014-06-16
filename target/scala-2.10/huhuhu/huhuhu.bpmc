@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<project dateCreated="2014-05-31T19:18:16.187+02:00" name="huhuhu" directory="F:\Workspace\BPMNScore\target\scala-2.10\huhuhu">
+    <models>
+        <model>simple.bpmn</model>
+    </models>
+</project>
